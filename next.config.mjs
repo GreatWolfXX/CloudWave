@@ -1,11 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
-    images: {
-      loader: "akamai",
-      path: "",
-    },
-    assetPrefix: "./",
+    basePath: '/CloudWave',
+    assetPrefix: 'https://greatwolfxx.github.io'
 };
 
 export default nextConfig;
