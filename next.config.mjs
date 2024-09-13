@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: '/CloudWave',
-    assetPrefix: 'https://greatwolfxx.github.io'
+    basePath: '/CloudWave'
 };
 
 export default nextConfig;
