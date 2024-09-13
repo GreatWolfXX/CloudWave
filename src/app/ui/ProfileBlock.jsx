@@ -17,7 +17,7 @@ export default function ProfileBlock(props) {
                 <p className={`${inter.className} ${styles.info_block_title_name}`}>{props.title_name}</p>
                 <p className={`${inter.className} ${styles.info_block_title_position}`}>{props.title_position}</p>
                 <div className={styles.email_block}>
-                    <img src={'/ic_email.svg'} alt="email" className={styles.email_block_icon} />
+                    <img src={'${basePath}/ic_email.svg'} alt="email" className={styles.email_block_icon} />
                     <p className={`${inter.className} ${styles.email_block_text}`}>{props.text_email}</p>
                 </div>
             </div>

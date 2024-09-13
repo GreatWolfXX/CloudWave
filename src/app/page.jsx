@@ -17,7 +17,7 @@ export default function Home() {
     <div className={styles.wrapper}>
       <header className={`${styles.container} ${styles.header}`}>
         <div className={`${styles.header_title}`}>
-          <img src={'/icon.svg'} alt="icon cloudwave" className={`${styles.header_title_icon}`} />
+          <img src={'${basePath}/icon.svg'} alt="icon cloudwave" className={`${styles.header_title_icon}`} />
           <p className={`${inter.className} ${styles.header_title_text}`}>CloudWave</p>
         </div>
         <div className={styles.menu}>
@@ -29,7 +29,7 @@ export default function Home() {
             <li className={`${inter.className} ${styles.menu_navigation_item}`}>FAQs</li>
           </ul>
           <Button className={styles.menu_btn_how_it_works} text='How it works' color='#DFE3DE' textColor='#1C4F4A' isContainImage='false' />
-          <img src={'/ic_phone.svg'} alt="phone" className={styles.menu_btn_phone} />
+          <img src={'${basePath}/ic_phone.svg'} alt="phone" className={styles.menu_btn_phone} />
         </div>
       </header>
       <section className={`${styles.container} ${styles.hero}`}>
@@ -41,17 +41,17 @@ export default function Home() {
           </div>
           <div className={styles.hero_users_container}>
             <div className={styles.hero_users_img}>
-              <img className={styles.user_img} src='/users_img/user_1.png' alt='user 1' />
-              <img className={styles.user_img} src='/users_img/user_2.png' alt='user 2' />
-              <img className={styles.user_img} src='/users_img/user_3.png' alt='user 3' />
-              <img className={styles.user_img} src='/users_img/user_4.png' alt='user 4' />
+              <img className={styles.user_img} src='${basePath}/users_img/user_1.png' alt='user 1' />
+              <img className={styles.user_img} src='${basePath}/users_img/user_2.png' alt='user 2' />
+              <img className={styles.user_img} src='${basePath}/users_img/user_3.png' alt='user 3' />
+              <img className={styles.user_img} src='${basePath}/users_img/user_4.png' alt='user 4' />
             </div>
             <p className={`${inter.className} ${styles.hero_users_title}`}>+10k Users around the Globe</p>
           </div>
         </div>
       </section>
       <section className={styles.trust_section}>
-        <img className={styles.trust_section_separator} src='/trust_section_separator.png' alt="trust section separator" />
+        <img className={styles.trust_section_separator} src='${basePath}/trust_section_separator.png' alt="trust section separator" />
         <div className={`${styles.container} ${styles.content}`}>
           <h2 className={`${inter.className} ${styles.content_title}`}>We are trusted by more than 1.000 Companies worldwide</h2>
           <div className={styles.content_companys}>
@@ -79,12 +79,12 @@ export default function Home() {
       <section className={`${styles.container} ${styles.our_team}`}>
       <h2 className={`${inter.className} ${styles.our_team_title}`}>Introducing Our Remarkable Team</h2>
         <div className={styles.our_team_profiles}>
-          <ProfileBlock border_color="#FFB130" src='/profile_img/profile_1.png' title_name='Ethan Michael' title_position='UI UX Designer' text_email='ethan.carter@example.com'/>
-          <ProfileBlock border_color="#1C4F4A" src='/profile_img/profile_2.png' title_name='Lucas Alexander' title_position='Professional QA Tester' text_email='alexander.patel@example.com'/>
-          <ProfileBlock border_color="#CCDCF6" src='/profile_img/profile_3.png' title_name='Mia Isabella' title_position='Senior Marketer' text_email='mia.brown@example.com'/>
-          <ProfileBlock border_color="#86BFBA" src='/profile_img/profile_4.png' title_name='Olivia Grace' title_position='Full Stack Developer' text_email='olivia.williams@example.com'/>
-          <ProfileBlock border_color="#FC6719" src='/profile_img/profile_5.png' title_name='Noah Thompson' title_position='UI UX Designer' text_email='noah.thompson@example.com'/>
-          <ProfileBlock border_color="#FFB130" src='/profile_img/profile_6.png' title_name='Emma Lee' title_position='Professional QA Tester' text_email='emma.lee@example.com'/>
+          <ProfileBlock border_color="#FFB130" src='${basePath}/profile_img/profile_1.png' title_name='Ethan Michael' title_position='UI UX Designer' text_email='ethan.carter@example.com'/>
+          <ProfileBlock border_color="#1C4F4A" src='${basePath}/profile_img/profile_2.png' title_name='Lucas Alexander' title_position='Professional QA Tester' text_email='alexander.patel@example.com'/>
+          <ProfileBlock border_color="#CCDCF6" src='${basePath}/profile_img/profile_3.png' title_name='Mia Isabella' title_position='Senior Marketer' text_email='mia.brown@example.com'/>
+          <ProfileBlock border_color="#86BFBA" src='${basePath}/profile_img/profile_4.png' title_name='Olivia Grace' title_position='Full Stack Developer' text_email='olivia.williams@example.com'/>
+          <ProfileBlock border_color="#FC6719" src='${basePath}/profile_img/profile_5.png' title_name='Noah Thompson' title_position='UI UX Designer' text_email='noah.thompson@example.com'/>
+          <ProfileBlock border_color="#FFB130" src='${basePath}/profile_img/profile_6.png' title_name='Emma Lee' title_position='Professional QA Tester' text_email='emma.lee@example.com'/>
         </div>
       </section>
     </div>
