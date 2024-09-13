@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
+    basePath: '/CloudWave',
+    assetPrefix: '/CloudWave/',
     images: {
-        loader: "akamai",
-        path: "/",
+        unoptimized: true,
     },
 };
 
