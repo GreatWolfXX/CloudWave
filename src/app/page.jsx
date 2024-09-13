@@ -3,6 +3,8 @@ import styles from './page.module.scss'
 import { Inter } from 'next/font/google'
 import Button from './ui/Button'
 import CompanyItem from './ui/CompanyItem'
+import InfoBlockWithImage from './ui/InfoBlockWithImage'
+import ProfileBlock from './ui/ProfileBlock'
 
 const inter = Inter({
   weight: ['400', '500', '600'],
@@ -70,26 +72,19 @@ export default function Home() {
       </section>
       <section className={`${styles.container} ${styles.how_we_work}`}>
         <h2 className={`${inter.className} ${styles.how_we_work_title}`}>How We Work</h2>
-        <div className={styles.how_we_work_item}>
-          <div className={styles.how_we_work_item_text}>
-            <p className={`${inter.className} ${styles.how_we_work_item_text_title}`}>Get started</p>
-            <p className={`${inter.className} ${styles.how_we_work_item_text_description}`}>Our world is becoming more and more obsessed with comparison and validation.</p>
-          </div>
-          <img className={styles.how_we_work_item_img} src='/how_we_work/get_started.png' alt='image get started' />
-        </div>
-        <div className={styles.how_we_work_item}>
-          <img className={styles.how_we_work_item_img} src='/how_we_work/configuration.png' alt='image configuration' />
-          <div className={styles.how_we_work_item_text}>
-            <p className={`${inter.className} ${styles.how_we_work_item_text_title}`}>Configuration</p>
-            <p className={`${inter.className} ${styles.how_we_work_item_text_description}`}>Configuration management can be used to maintain an understanding of the status of system components.</p>
-          </div>
-        </div>
-        <div className={styles.how_we_work_item}>
-          <div className={styles.how_we_work_item_text}>
-            <p className={`${inter.className} ${styles.how_we_work_item_text_title}`}>Solution</p>
-            <p className={`${inter.className} ${styles.how_we_work_item_text_description}`}>Solution, in chemistry, a homogenous mixture of two or more substances in relative.</p>
-          </div>
-          <img className={styles.how_we_work_item_img} src='/how_we_work/solution.png' alt='image solution' />
+        <InfoBlockWithImage isWithLeftImage={false} src='/how_we_work/get_started.png' title='Get started' description='Our world is becoming more and more obsessed with comparison and validation.' />
+        <InfoBlockWithImage isWithLeftImage={true} src='/how_we_work/configuration.png' title='Configuration' description='Configuration management can be used to maintain an understanding of the status of system components.' />
+        <InfoBlockWithImage isWithLeftImage={false} src='/how_we_work/solution.png' title='Solution' description='Solution, in chemistry, a homogenous mixture of two or more substances in relative.' />
+      </section>
+      <section className={`${styles.container} ${styles.our_team}`}>
+      <h2 className={`${inter.className} ${styles.our_team_title}`}>Introducing Our Remarkable Team</h2>
+        <div className={styles.our_team_profiles}>
+          <ProfileBlock border_color="#FFB130" src='/profile_img/profile_1.png' title_name='Ethan Michael' title_position='UI UX Designer' text_email='ethan.carter@example.com'/>
+          <ProfileBlock border_color="#1C4F4A" src='/profile_img/profile_2.png' title_name='Lucas Alexander' title_position='Professional QA Tester' text_email='alexander.patel@example.com'/>
+          <ProfileBlock border_color="#CCDCF6" src='/profile_img/profile_3.png' title_name='Mia Isabella' title_position='Senior Marketer' text_email='mia.brown@example.com'/>
+          <ProfileBlock border_color="#86BFBA" src='/profile_img/profile_4.png' title_name='Olivia Grace' title_position='Full Stack Developer' text_email='olivia.williams@example.com'/>
+          <ProfileBlock border_color="#FC6719" src='/profile_img/profile_5.png' title_name='Noah Thompson' title_position='UI UX Designer' text_email='noah.thompson@example.com'/>
+          <ProfileBlock border_color="#FFB130" src='/profile_img/profile_6.png' title_name='Emma Lee' title_position='Professional QA Tester' text_email='emma.lee@example.com'/>
         </div>
       </section>
     </div>

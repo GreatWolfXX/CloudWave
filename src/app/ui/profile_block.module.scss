@@ -1,0 +1,67 @@
+.profile_block {
+    position: relative;
+    display: inline-block;
+    flex: 1 0 33%;
+
+    &_avatar {
+        display: flex;
+        justify-content: center;
+
+        &_img {
+            scale: 98%;
+        }
+
+        &::after {
+            content: '';
+            --radius: 12px;
+            --size: 230px;
+            --result_size: calc(var(--size) - (var(--radius)*2));
+
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: var(--result_size);
+            width: var(--result_size);
+            border: var(--radius) solid var(--border-color);
+            border-radius: 50%;
+        }
+    }
+}
+.info_block {
+    margin-top: 24px;
+    text-align: center;
+
+    &_title_name {
+        color: #1C4F4A;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    &_title_position {
+        color: #1C4F4A;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+    }
+}
+
+.email_block {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+
+    
+    &_icon {
+        color: #1C4F4A;
+        font-size: 25px;
+        font-weight: 500;
+        margin-right: 8px;
+    }
+
+    &_text {
+        color: #1C4F4A;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+}

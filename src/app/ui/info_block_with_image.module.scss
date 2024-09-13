@@ -1,0 +1,24 @@
+.info_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_text {
+        flex-basis: 58%;
+        color: #1C4F4A;
+
+        &_title {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        &_description {
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
+
+    &_img {
+        -webkit-user-drag: none;
+    }
+}
