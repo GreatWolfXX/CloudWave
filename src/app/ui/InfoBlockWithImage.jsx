@@ -9,7 +9,7 @@ const inter = Inter({
 
 export default function InfoBlockWithImage(props) {
     return (
-        <div className={`${styles.info_block}`}>
+        <div className={`${props.className} ${styles.info_block}`}>
             {props.isWithLeftImage == true && <img className={styles.info_block_img} src={props.src} alt={props.alt} />}
             <div className={styles.info_block_text}>
                 <p className={`${inter.className} ${styles.info_block_text_title}`}>{props.title}</p>

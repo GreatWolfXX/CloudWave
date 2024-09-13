@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV = "production"
 const nextConfig = {
-    basePath: isProd ? '/CloudWave' : '',
+    basePath: '/CloudWave',
+    assetPrefix: '/CloudWave',
     output: 'export',
     distDir: 'dist',
     images: {
